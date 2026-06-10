@@ -40,11 +40,16 @@ Grounded answers, timelines, graph summary, metrics
 
 ## Local Setup on Windows Anaconda Prompt
 
+Clone the repository and enter the project directory:
+
+```bash
+git clone https://github.com/tprytkov/biomed-kg-memory-agent.git
+cd biomed-kg-memory-agent
+```
+
 Recommended one-command conda setup:
 
 ```bash
-cd C:\job_search_26\emloyability_assesment\biomed-kg-memory-agent
-
 conda env create -f environment.yml
 conda activate kgmemory
 ```
@@ -52,8 +57,6 @@ conda activate kgmemory
 Manual setup using `requirements.txt`:
 
 ```bash
-cd C:\job_search_26\emloyability_assesment\biomed-kg-memory-agent
-
 conda create -n kgmemory python=3.11 -y
 conda activate kgmemory
 
