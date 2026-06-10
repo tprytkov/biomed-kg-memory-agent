@@ -74,6 +74,26 @@ Open:
 - Swagger UI: [http://localhost:8000/docs](http://localhost:8000/docs)
 - Healthcheck: [http://localhost:8000/](http://localhost:8000/)
 
+## Streamlit Portfolio Demo
+
+Run the polished self-contained frontend directly from the project root:
+
+```bash
+streamlit run frontend/streamlit_app.py
+```
+
+The default mode runs the synthetic biomedical graph and memory agent directly in the
+Streamlit process. It does not require FastAPI, Neo4j, Docker, an OpenAI API key, or a
+Hugging Face model download.
+
+To use the optional FastAPI mode, start the backend on the frontend's default API port:
+
+```bash
+python -m uvicorn src.app.api.main:app --reload --port 8001
+```
+
+Then select **FastAPI backend mode** in the Streamlit sidebar.
+
 ## Run With Neo4j Community Edition
 
 Start the full local stack:
@@ -171,6 +191,7 @@ src/app/data/         Synthetic biomedical records
 src/app/extraction/   Rule-based and optional local HF extraction helpers
 src/app/graph/        Neo4j and NetworkX graph stores
 src/app/evals/        Evaluation metrics
+frontend/             Streamlit portfolio demo
 tests/                Pytest suite
 scripts/              Local server and graph seeding helpers
 docs/                 Architecture and API notes
