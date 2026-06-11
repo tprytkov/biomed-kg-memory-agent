@@ -4,6 +4,13 @@ A local-first biomedical knowledge-graph memory agent for temporal clinical and 
 
 No OpenAI API, paid hosted vector database, or cloud service is required. Rule-based extraction is the default so the project runs on a normal Windows Anaconda setup. Optional Hugging Face local mode is available when you want local embedding-based confidence reranking.
 
+## Live Demo: Streamlit Public Frontend
+
+Explore the [live Streamlit demo](https://biomed-kg-memory-agent-jqqguacema26da5fdfnk9m.streamlit.app/).
+
+The public demo runs in self-contained mode using synthetic biomedical data. It does not
+require FastAPI, Neo4j, Docker, an OpenAI API, or secrets.
+
 ## Project Summary
 
 This repository demonstrates a recruiter-friendly backend project for biomedical AI infrastructure:
